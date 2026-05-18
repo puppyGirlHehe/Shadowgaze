@@ -1,0 +1,29 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.x'
+
+      - name: Build
+        run: dotnet build Shadowgaze.csproj --configuration Release
+
+      - name: Publish release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "bin/Release/Shadowgaze.zip"
+          tag: latest
+          commit: main
+          allowUpdates: true
+          removeArtifacts: true
+          token: ${{ secrets.GITHUB_TOKEN }}
