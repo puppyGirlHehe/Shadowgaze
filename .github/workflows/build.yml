@@ -26,6 +26,9 @@ jobs:
       - name: Build
         run: dotnet build Shadowgaze.csproj --configuration Release
 
+      - name: Find zip
+        run: find . -name "*.zip" -not -path "*/obj/*"
+
       - name: Publish release
         uses: ncipollo/release-action@v1
         with:
