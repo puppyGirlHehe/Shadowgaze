@@ -15,6 +15,12 @@ jobs:
         with:
           dotnet-version: '10.x'
 
+      - name: Download Dalamud
+        run: |
+          wget https://goatcorp.github.io/dalamud-distrib/stg/latest.zip -O /tmp/dalamud.zip
+          mkdir -p $HOME/.xlcore/dalamud/Hooks/dev
+          unzip /tmp/dalamud.zip -d $HOME/.xlcore/dalamud/Hooks/dev
+
       - name: Build
         run: dotnet build Shadowgaze.csproj --configuration Release
 
