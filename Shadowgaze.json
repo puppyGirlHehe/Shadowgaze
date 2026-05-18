@@ -1,0 +1,11 @@
+{
+    "Author": "Meow",
+    "Name": "Shadowgaze",
+    "InternalName": "Shadowgaze",
+    "ApplicableVersion": "any",
+    "DalamudApiLevel": 15,
+    "AssemblyVersion": "1.0.0.0",
+    "Punchline": "Log what a watched player targets.",
+    "Description": "Select a nearby player and track everything they target over time.",
+    "Tags": ["utility", "social"]
+}

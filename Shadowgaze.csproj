@@ -1,0 +1,12 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+    <PropertyGroup>
+        <RootNamespace>Shadowgaze</RootNamespace>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyName>Shadowgaze</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="Shadowgaze.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+</Project>
