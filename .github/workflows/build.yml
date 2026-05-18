@@ -26,13 +26,13 @@ jobs:
       - name: Build
         run: dotnet build Shadowgaze.csproj --configuration Release
 
-      - name: Find zip
-        run: find . -name "*.zip" -not -path "*/obj/*"
+      - name: Stage artifact
+        run: cp ./bin/Release/Shadowgaze/latest.zip ./Shadowgaze.zip
 
       - name: Publish release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "bin/Release/Shadowgaze.zip"
+          artifacts: "Shadowgaze.zip"
           tag: latest
           commit: main
           allowUpdates: true
