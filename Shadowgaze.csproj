@@ -3,6 +3,7 @@
         <RootNamespace>Shadowgaze</RootNamespace>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyName>Shadowgaze</AssemblyName>
+        <OutputPath>bin\$(Configuration)\</OutputPath>
     </PropertyGroup>
     <ItemGroup>
         <None Include="Shadowgaze.json">
