@@ -1,0 +1,20 @@
+[
+  {
+    "Author": "Meow",
+    "Name": "Shadowgaze",
+    "InternalName": "Shadowgaze",
+    "AssemblyVersion": "1.0.0.0",
+    "RepoUrl": "https://github.com/puppyGirlHehe/Shadowgaze",
+    "Tags": ["utility", "social"],
+    "DalamudApiLevel": 15,
+    "Punchline": "Log what a watched player targets.",
+    "Description": "Select a nearby player and track everything they target over time.",
+    "ApplicableVersion": "any",
+    "DownloadLinkInstall": "https://github.com/puppyGirlHehe/Shadowgaze/releases/latest/download/Shadowgaze.zip",
+    "DownloadLinkTesting": "https://github.com/puppyGirlHehe/Shadowgaze/releases/latest/download/Shadowgaze.zip",
+    "DownloadLinkUpdate": "https://github.com/puppyGirlHehe/Shadowgaze/releases/latest/download/Shadowgaze.zip",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "Testing": false
+  }
+]
